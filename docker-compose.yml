@@ -1,0 +1,11 @@
+version: '2'
+services:
+  exiftool:
+    stdin_open: true
+    container_name: exiftool
+    tty: true
+    image: ahmadfs/exiftool
+    volumes:
+      - ./logs:/logs
+      - ./INPUT:/source:ro     # Make sure you provide a valid input directory
+      - ./OUTPUT:/destination  # Make sure you provide a valid output directory

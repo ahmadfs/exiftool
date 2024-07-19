@@ -1,5 +1,4 @@
-# exiftool
-Dockerized version of exiftool
+# Dockerized version of exiftool
 ------------------------------
 A docker version of exiftool to copy and rename files from a source directory to a destination directory defined as variables in the docker-compose.yml file. This would create directory path of:
 

@@ -1,5 +1,7 @@
+# EXIFTOOL SHELL SCRIPT
 #!/bin/bash
-#
+# EXIFTOOl Documentation: https://exiftool.org/exiftool_pod.html
+# You can adjust the output directory and filename structure below
 
 exiftool -r -P -o . \
 '-FileName<$FileModifyDate/${FileModifyDate#;DateFmt("%Y-%m-%d_%H%M%S")}_%f%-c.%e' \
